@@ -1,0 +1,16 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure     {:mvn/version "1.10.3"}}
+
+ :aliases {:repl
+           {:extra-deps
+            {nrepl/nrepl       {:mvn/version "0.9.0-SNAPSHOT"}
+             cider/cider-nrepl {:mvn/version "0.27.0-SNAPSHOT"}}
+            :main-opts ["-m" "nrepl.cmdline" "--middleware [cider.nrepl/cider-middleware]"]}
+
+           :test
+           {:extra-deps  {lambdaisland/kaocha {:mvn/version "1.0.861"}}
+            :extra-paths ["test"]
+            :main-opts   ["-m" "kaocha.runner"]}
+
+           :run
+           {:main-opts ["-m" "app.core"]}}}

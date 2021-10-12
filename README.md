@@ -58,3 +58,22 @@ $ lein run small-example.csv 6156dc9dc1f742f8e11aa14d
 # Submitting your code
 
 Fork this repo to get the instructions and example data and then when your assignment is working, send a link over teamtailor.
+
+# Solution
+```
+clojure -M:run small-example.csv 6156dc9dc1f742f8e11aa14d
+6156dca47fe5761a20b92b1d;2
+6156dcb90ba5173d292c9afe;0
+```
+
+## Userful aliases
+
+run tests
+```
+make test
+```
+
+run cider repl
+```
+make dev
+```
